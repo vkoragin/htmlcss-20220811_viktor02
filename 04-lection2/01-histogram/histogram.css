@@ -1,10 +1,15 @@
 .histogram {
-  width: 354px;
+  background: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
   padding: 24px;
-  padding-top: 16px;
   box-sizing: border-box;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
 }
 
 .histogram__header {
@@ -18,6 +23,7 @@
 
 .histogram__count {
   font-size: 20px;
+  line-height: 26px;
 }
 
 .histogram__link {
@@ -36,5 +42,10 @@
 
 .histogram__item {
   background: var(--blue);
-  flex: 1;  
+  flex: 1;
+  margin-left: 1px;
+}
+
+.histogram__item:last-child {
+  margin-left: 0;
 }
