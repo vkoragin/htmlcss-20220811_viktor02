@@ -1,0 +1,40 @@
+.histogram {
+  width: 354px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 24px;
+  padding-top: 16px;
+  box-sizing: border-box;
+}
+
+.histogram__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.histogram__title, .histogram__count {
+  margin-top: 0;
+}
+
+.histogram__count {
+  font-size: 20px;
+}
+
+.histogram__link {
+  text-decoration: none;
+}
+
+.histogram__link:hover {
+  text-decoration: underline;
+}
+
+.histogram__items {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+}
+
+.histogram__item {
+  background: var(--blue);
+  flex: 1;  
+}
