@@ -28,6 +28,6 @@
     --secondary: var(--purple);
 }
 
-* {
+body {
     font-family: 'Inter', sans-serif;
 }
