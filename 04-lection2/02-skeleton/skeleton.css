@@ -1,7 +1,6 @@
 .skeleton {
   border: 1px solid var(--grey-3);
   border-radius: 8px;
-  width: 579px;
   padding: 24px 40px 32px 24px;
   box-sizing: border-box;
 }
@@ -25,22 +24,18 @@
   flex-flow: column;
   flex: 1;
   width: 100%;
+  gap: 8px;
 }
 
 .skeleton__line {
-  height: 20px;
-  margin-bottom: 8px;
+  height: 20px;  
   background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
-.skeleton__line:last-child {
-  margin-bottom: 0;
-}
-
-.skeleton__title {
+.skeleton__line_middle {
   width: 33%;
 }
 
-.skeleton__subTitle {
+.skeleton__line_short {
   width: 50%;
 }
