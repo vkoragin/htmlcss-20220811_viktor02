@@ -1,6 +1,7 @@
 .header {  
   border-bottom: solid 1px var(--grey-2);
-  padding: 96px 160px 77px 160px;
+  padding-top: 96px;
+  padding-bottom: 77px;
 }
 
 .header__title {

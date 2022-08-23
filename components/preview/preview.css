@@ -1,3 +1,11 @@
 .preview {
   background-color: var(--grey-5);
-} 
+  padding-top: 68px;
+  padding-bottom: 204px;; 
+}
+
+.preview__inner {
+  display: flex;
+  gap: 30px;
+  flex-flow: wrap;
+}

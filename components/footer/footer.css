@@ -1,7 +1,8 @@
 .footer {
   text-align: center;
   border-top: solid 1px var(--grey-2);
-  padding: 72px 160px 136px 160px;
+  padding-top: 160px;
+  padding-bottom: 136px;
 }
 
 .footer__title {
