@@ -2,7 +2,7 @@
   background: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
-  padding: 24px;
+  padding: 14px 24px 24px 24px;
   box-sizing: border-box;
   font-family: 'Inter';
   font-style: normal;
@@ -19,6 +19,7 @@
 
 .histogram__title, .histogram__count {
   margin-top: 0;
+  margin-bottom: 7px;
 }
 
 .histogram__count {
@@ -27,6 +28,7 @@
 }
 
 .histogram__link {
+  padding-top: 1px;
   text-decoration: none;
 }
 
@@ -38,6 +40,7 @@
   display: flex;
   align-items: flex-end;
   height: 50px;
+  margin-top: 38px;
 }
 
 .histogram__item {
