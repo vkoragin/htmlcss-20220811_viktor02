@@ -1,0 +1,27 @@
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-row-gap: 38px;
+  background: var(--grey-5);
+  height: 100%;
+}
+
+.page__header {
+  background: var(--white);
+}
+
+.page__main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 56px;
+}
+
+.page__footer {
+  color: var(--grey-3);
+  font: normal 500 12px/18px 'Inter';
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.04em;
+  padding: 54px 0 56px;
+}
