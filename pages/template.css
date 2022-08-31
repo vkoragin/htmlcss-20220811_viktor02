@@ -1,27 +1,44 @@
 .page {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-row-gap: 38px;
+  grid-row-gap: 2.375rem;
   background: var(--grey-5);
   height: 100%;
 }
 
 .page__header {
   background: var(--white);
+  padding: 1rem 0;
+}
+
+.page__logo {
+  text-align: center;
+  height: 2rem;
 }
 
 .page__main {
   width: 100%;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-column-gap: 56px;
+  grid-column-gap: 3.5rem;
 }
 
 .page__footer {
+  display: none;
   color: var(--grey-3);
-  font: normal 500 12px/18px 'Inter';
+  font: normal 500 0.75rem/1.125rem 'Inter';
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.04em;
-  padding: 54px 0 56px;
+  padding: 3.375rem 0 3.5rem;
+}
+
+@media screen and (min-width: 376px) {
+  .page__logo {
+    text-align: left;
+  }
+
+  .page__footer {
+    display: block;
+  }
 }
