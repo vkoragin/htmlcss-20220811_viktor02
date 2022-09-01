@@ -1,21 +1,26 @@
 .footer {
+  display: none;
   text-align: center;
   border-top: solid 1px var(--grey-2);
-  padding-top: 160px;
-  padding-bottom: 136px;
+  padding-top: 10rem;
+  padding-bottom: 8.5rem;
 }
 
 .footer__title {
-  font-family: 'Inter', sans-serif;
-  font-weight: normal;
-  font-size: 48px;
+  font: normal 3rem 'Inter';
   margin: 0;
-  padding-bottom: 32px;
+  padding-bottom: 2rem;
 }
 
 .footer__text {
-  font-family: 'Inter', sans-serif;
-  max-width: 640px;
-  margin: 0 auto;
+  font-family: 'Inter';
   line-height: 1.5;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 376px) {
+  .footer {
+    display: block;
+  }
 }

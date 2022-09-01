@@ -1,11 +1,23 @@
 .preview {
   background-color: var(--grey-5);
-  padding-top: 68px;
-  padding-bottom: 204px;; 
+  padding-top: 1.375rem;
+  padding-bottom: 12.75rem; 
 }
 
 .preview__inner {
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  gap: 1rem;
   flex-flow: wrap;
+}
+
+
+@media screen and (min-width: 376px) {
+  .preview {
+    padding-top: 4.25rem;
+  }
+
+  .preview__inner {
+    gap: 1.875rem;
+  }
 }
