@@ -3,21 +3,16 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(./public/forest_400.jpg);
 }
 
-@media (max-width: 400px) {
+@media (min-width: 401px) {
   .body {
     background-image: url(./public/forest_768.jpg);
   }
 }
 
-@media (min-width: 401px) and (max-width: 768px) {
-  .body {
-    background-image: url(./public/forest_768.jpg);
-  }
-}
-
-@media (min-width: 469px) and (max-width: 1024px) {
+@media (min-width: 769px) {
   .body {
     background-image: url(./public/forest_1024.jpg);
   }
