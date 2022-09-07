@@ -26,11 +26,12 @@
 }
 
 .radio__icon {
+  visibility: hidden;
   width: 18px;
   height: 18px;
   border-radius: 14px;
   position: absolute;
-  background: var(--white);
+  background: var(--blue);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -46,7 +47,7 @@
 }
 
 .radio__input:checked~.radio__state .radio__icon {
-  background: var(--blue);
+  visibility: visible;
 }
 
 .radio__input:focus~.radio__state .radio__label {
