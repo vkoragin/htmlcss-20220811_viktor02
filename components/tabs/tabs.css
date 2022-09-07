@@ -1,0 +1,50 @@
+.tabs__scroller {
+  margin: calc(-1.375rem - 2.3125rem) 1rem 1.375rem;
+}
+
+.tabs>input[type="radio"] {
+  display: none;
+}
+
+.tabs__scroller>label {
+  display: inline-block;
+  font: 400 normal 16px/24px 'Inter';
+  padding-bottom: 8px;
+  margin-right: 24px;
+  color: var(--black);
+  cursor: pointer;
+  border-bottom: solid 5px transparent;
+}
+
+#all-tab:checked~.tabs__scroller .all,
+#complex-tab:checked~.tabs__scroller .complex,
+#simple-tab:checked~.tabs__scroller .simple {
+  border-bottom: solid 5px var(--black);
+}
+
+.tabs__content {
+  display: none;
+}
+
+#all-tab:checked~.preview__inner .tabs__content_complex,
+#all-tab:checked~.preview__inner .tabs__content_simple {
+  display: block;
+}
+
+#complex-tab:checked~.preview__inner .tabs__content_complex {
+  display: block;
+}
+
+#simple-tab:checked~.preview__inner .tabs__content_simple {
+  display: block;
+}
+
+@media screen and (min-width: 376px) {
+  .tabs__scroller {
+    margin: calc(-4.25rem - 2.3125rem) 0 4.25rem;
+  }
+
+  .tabs__scroller>label {
+    margin-right: 40px;
+  }
+}

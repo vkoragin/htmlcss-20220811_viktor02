@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./components/tabs/tabs.css">
     </head>
     <body>
         <div class="page">
@@ -19,30 +20,42 @@
 
             <main class="preview">
                 <div class="container">
-                    <div class="preview__inner">
-                        <div class="card">
-                            <div class="card__preview"></div>
-                            <div class="card__title">Tooltip</div>
+                    <div class="tabs">
+                        <input type="radio" id="all-tab" name="tab" value="all" checked>
+                        <input type="radio" id="complex-tab" name="tab" value="complex">
+                        <input type="radio" id="simple-tab" name="tab" value="simple">
+                    
+                        <div class="tabs__scroller">
+                            <label for="all-tab" class="all">All components</label>
+                            <label for="complex-tab" class="complex">Complex</label>
+                            <label for="simple-tab" class="simple">Simple</label>
                         </div>
-                        <div class="card">
-                            <div class="card__preview"></div>
-                            <div class="card__title">Custom form elements</div>
-                        </div>
-                        <div class="card">
-                            <div class="card__preview"></div>
-                            <div class="card__title">Calendar</div>
-                        </div>
-                        <div class="card">
-                            <div class="card__preview"></div>
-                            <div class="card__title">Modal dialog</div>
-                        </div>
-                        <div class="card">
-                            <div class="card__preview"></div>
-                            <div class="card__title">Histogram</div>
-                        </div>
-                        <div class="card">
-                            <div class="card__preview"></div>
-                            <div class="card__title">Avatar</div>
+
+                        <div class="preview__inner">
+                            <div class="card tabs__content tabs__content_simple">
+                                <div class="card__preview"></div>
+                                <div class="card__title">Tooltip</div>
+                            </div>
+                            <div class="card tabs__content tabs__content_complex">
+                                <div class="card__preview"></div>
+                                <div class="card__title">Custom form elements</div>
+                            </div>
+                            <div class="card tabs__content tabs__content_complex">
+                                <div class="card__preview"></div>
+                                <div class="card__title">Calendar</div>
+                            </div>
+                            <div class="card tabs__content tabs__content_simple">
+                                <div class="card__preview"></div>
+                                <div class="card__title">Modal dialog</div>
+                            </div>
+                            <div class="card tabs__content tabs__content_complex">
+                                <div class="card__preview"></div>
+                                <div class="card__title">Histogram</div>
+                            </div>
+                            <div class="card tabs__content tabs__content_simple">
+                                <div class="card__preview"></div>
+                                <div class="card__title">Avatar</div>
+                            </div>
                         </div>
                     </div>
                 </div>
