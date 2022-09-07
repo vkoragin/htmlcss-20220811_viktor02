@@ -1,4 +1,4 @@
-.input {
+.input__control {
   width: 350px;
   height: 56px;
   border-radius: 8px;
@@ -11,20 +11,23 @@
   outline: none;
 }
 
-.input:focus {
+.input__control:focus {
   border: 1px solid var(--blue);
 }
 
-.input::-webkit-input-placeholder {
+.input__control::-webkit-input-placeholder {
   color: var(--grey-2);
 }
 
-.input::-moz-placeholder {
+.input__control::-moz-placeholder {
   color: var(--grey-2);
 }
 
 .input__wrapper {
   position: relative;
+}
+
+.input {
   display: inline-block;
 }
 
@@ -37,19 +40,20 @@
   display: none;
 }
 
-.input__wrapper_invalid .input {
+.input_invalid .input__control {
   border: 1px solid var(--red);
 }
 
-.input__wrapper_invalid .input__icon_invalid {
+.input_invalid .input__icon_invalid {
   display: block;
 }
 
-.input__wrapper_success .input__icon_success {
+.input_success .input__icon_success {
   display: block;
 }
 
 .input__label {
+  display: block;
   font: 500 normal 12px/18px 'Inter';
   letter-spacing: 0.04em;
   text-transform: uppercase;

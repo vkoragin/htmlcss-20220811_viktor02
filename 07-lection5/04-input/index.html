@@ -6,37 +6,43 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-        <label class="input__wrapper">
-            <svg class="input__icon input__icon_success">
-                <use href="../../assets/images/icons.svg#success"></use>
-            </svg>
-            <svg class="input__icon input__icon_invalid">
-                <use href="../../assets/images/icons.svg#danger"></use>
-            </svg>
-            <div class="input__label">label</div>
-            <input class="input" type="text" placeholder="Placeholder">            
-        </label>
+        <div class="input">
+            <label for="simple" class="input__label">label</label>
+            <div class="input__wrapper">
+                <svg class="input__icon input__icon_success">
+                    <use href="../../assets/images/icons.svg#success"></use>
+                </svg>
+                <svg class="input__icon input__icon_invalid">
+                    <use href="../../assets/images/icons.svg#danger"></use>
+                </svg>            
+                <input class="input__control" id="simple" type="text" placeholder="Placeholder">
+            </div>                        
+        </div>
 
-        <label class="input__wrapper input__wrapper_success">
-            <svg class="input__icon input__icon_success">
-                <use href="../../assets/images/icons.svg#success"></use>
-            </svg>
-            <svg class="input__icon input__icon_invalid">
-                <use href="../../assets/images/icons.svg#danger"></use>
-            </svg>
-            <div class="input__label">sucess</div>
-            <input class="input" type="text" placeholder="Placeholder">            
-        </label>
+        <div class="input input_success">
+            <label for="success" class="input__label">sucess</label>
+            <div class="input__wrapper">
+                <svg class="input__icon input__icon_success">
+                    <use href="../../assets/images/icons.svg#success"></use>
+                </svg>
+                <svg class="input__icon input__icon_invalid">
+                    <use href="../../assets/images/icons.svg#danger"></use>
+                </svg>            
+                <input class="input__control" id="success" type="text" placeholder="Placeholder">
+            </div>                        
+        </div>
 
-        <label class="input__wrapper input__wrapper_invalid">
-            <svg class="input__icon input__icon_success">
-                <use href="../../assets/images/icons.svg#success"></use>
-            </svg>
-            <svg class="input__icon input__icon_invalid">
-                <use href="../../assets/images/icons.svg#danger"></use>
-            </svg>
-            <div class="input__label">error</div>
-            <input class="input" type="text" placeholder="Placeholder">            
-        </label>
+        <div class="input input_invalid">
+            <label for="invalid" class="input__label">error</label>
+            <div class="input__wrapper">
+                <svg class="input__icon input__icon_success">
+                    <use href="../../assets/images/icons.svg#success"></use>
+                </svg>
+                <svg class="input__icon input__icon_invalid">
+                    <use href="../../assets/images/icons.svg#danger"></use>
+                </svg>            
+                <input class="input__control" id="invalid" type="text" placeholder="Placeholder">
+            </div>                        
+        </div>
     </body>
 </html>
