@@ -32,6 +32,7 @@
   border-radius: 16px;
   position: absolute;
   top: 1px;
+  left: 0;
   transform: translateX(2px);
 }
 
