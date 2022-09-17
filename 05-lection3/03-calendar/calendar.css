@@ -49,5 +49,5 @@
 }
 
 .calendar__item_range_interval {
-  background: rgba(160, 177, 245, 0.2);
+  background: rgba(160, 177, 245, .2);
 }

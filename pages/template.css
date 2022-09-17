@@ -26,10 +26,10 @@
 .page__footer {
   display: none;
   color: var(--grey-3);
-  font: normal 500 0.75rem/1.125rem 'Inter';
+  font: normal 500 .75rem/1.125rem 'Inter';
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   padding: 3.375rem 0 3.5rem;
 }
 

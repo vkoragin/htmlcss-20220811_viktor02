@@ -11,7 +11,7 @@
   transform: translateX(-50%);
   color: var(--grey-2);
   background: var(--blue);
-  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, .05);
   box-sizing: border-box;
   border-radius: 10px;
   padding: 13px 21px 8px;
@@ -21,7 +21,7 @@
 }
 
 .tooltip__helper::before {
-  content: "";
+  content: '';
   border: solid 10px transparent;
   border-top: solid 10px var(--blue);
   position: absolute;  
